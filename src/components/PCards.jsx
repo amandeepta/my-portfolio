@@ -5,7 +5,7 @@ function PCards({ id, name, discription, gitLink}) {
 
     return (
         <div
-            className="flex flex-col -z-10 bg-white rounded-lg shadow-lg w-auto p-4 hover:shadow-xl 
+            className="flex flex-col bg-white rounded-lg shadow-lg w-auto p-4 hover:shadow-xl 
             transition-transform transform hover:scale-105 border border-gray-300 cursor-pointer my-10"
             onClick={openLink}
         >

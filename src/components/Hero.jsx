@@ -18,10 +18,13 @@ function Hero() {
 
             <h2 className="text-2xl font-bold">Projects</h2>
 
-            <div className="grid grid-cols-2 gap-4">
-                {Data.map((dataItem) => (
-                    <PCards key={dataItem.id} {...dataItem} />
-                ))}
+            <div className='grid grid-cols-2 gap-5'>
+
+            {
+                Data.map((dataItem) => {
+                   return <PCards key={dataItem.id} {...dataItem} />;
+                })
+            }
             </div>
 
         </div>
