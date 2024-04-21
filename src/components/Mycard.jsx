@@ -2,7 +2,8 @@ import { useState } from "react";
 import { TfiAngleUp, TfiAngleDown,} from "react-icons/tfi";
 import { FaInstagram, FaLinkedin, FaTelegramPlane, FaTwitter, FaDiscord } from "react-icons/fa";
 import { AiTwotoneMail } from "react-icons/ai";
-import image from '../assets/1.jpg'
+import image from '../assets/1.jpg';
+
 function Mycard() {
     const contactInfo = [
         {
