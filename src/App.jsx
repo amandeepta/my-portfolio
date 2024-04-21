@@ -10,7 +10,7 @@ function App() {
         <Router>
             <div className="bg-black py-12 px-16 lg:py-16 lg:px-24 
              lg:space-x-12 max-md:py-4 max-md:px-4 h-screen overflow-y-auto">
-                <div className='flex max-md:flex-col lg:flex-row max-md:space-y-6 lg:space-x-11 md:space-x-6 w-full'>
+                <div className='flex max-md:flex-col lg:flex-row max-md:space-y-10 lg:space-x-11 md:space-x-6 w-full'>
                     <Mycard />
                     <div className='relative w-full'>
                         <Routes>
