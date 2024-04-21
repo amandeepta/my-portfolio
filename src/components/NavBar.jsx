@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 function NavBar() {
     return (
@@ -9,9 +10,15 @@ function NavBar() {
             ">
                 <ul className=" flex space-x-3 lg:space-x-6 text-green px-5 items-center py-3 max-md:justify-evenly font-bold
                 ">
-                    <li className="hover:underline cursor-pointer ">Home</li>
-                    <li className="hover:underline cursor-pointer">Blog</li>
-                    <li className="hover:underline cursor-pointer">Contact</li>
+                    <li className="hover:underline cursor-pointer ">
+                    <Link to="/">Home</Link>
+                    </li>
+                    <li className="hover:underline cursor-pointer">
+                        <Link to = "/blogs">Blogs </Link>
+                    </li>
+                    <li className="hover:underline cursor-pointer">
+                        <Link to = "/contact">Contact </Link>
+                    </li>
                 </ul>
             </nav>
     );

@@ -6,7 +6,6 @@ function Hero() {
     return (
         <div className="w-auto h-max relative bg-[#EEEBDD]
         p-6 rounded-2xl shadow-md">
-            <NavBar />
             <h2 className="text-2xl font-bold mb-2 font-serif">About Me</h2>
             <div className="bg-yellow-600 w-[40px] h-[5px] my-3"></div>
             <p className="mb-3 text-lg font-mono">

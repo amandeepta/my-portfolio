@@ -39,9 +39,9 @@ function Mycard() {
     return (
         <aside className="sticky top-0 p-10 bg-[#EEEBDD]
 
-        rounded-2xl w-auto h-max shadow-md">
+        rounded-2xl max-w-[350px] h-max shadow-md">
             <div className="flex flex-col w-full">
-                <img src = {image} alt = "my image" className="rounded-3xl w-xl shadow-2xl object-cover border
+                <img src = {image} alt = "my image" className="rounded-3xl w-auto shadow-2xl object-cover border
                  border-black hover:shadow-3xl transition-shadow duration-200 hover:scale-105"></img>
                 <h1 className="w-full font-bold text-center mt-4 text-3xl mb-4 font-serif">Aman Deepta</h1>
 
