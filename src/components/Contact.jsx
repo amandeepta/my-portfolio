@@ -14,9 +14,8 @@ function Contact() {
         setName('');
         setEmail('');
         setMessage('');
-
-
     }
+
     return (
         <div className="flex flex-col space-y-6 bg-[#EEEBDD] w-auto h-max relative 
         p-6 rounded-2xl shadow-md">
@@ -24,7 +23,7 @@ function Contact() {
             <div className="bg-yellow-600 w-[40px] h-[5px] my-3"></div>
                 <form
                         onSubmit={handleSubmit}
-                        action="https://formspree.io/f/YOUR_FORM_ID"
+                        action=""
                         method="POST"
                         className="space-y-4 flex flex-col"
                     >
