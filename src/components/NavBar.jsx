@@ -6,10 +6,10 @@ function NavBar() {
                 max-md:fixed max-md:bottom-0 max-md:left-0 max-md:w-full max-md:z-1 max-md:h-min max-md:top-auto max-md:opacity-70
                 max-md:z-10 max-md:rounded-t-2xl
             ">
-                <ul className=" flex space-x-3 lg:space-x-6 text-green px-5 items-center py-3 max-md:justify-evenly 
+                <ul className=" flex space-x-3 lg:space-x-6 text-green px-5 items-center py-3 max-md:justify-evenly font-bold
                 ">
                     <li className="hover:underline cursor-pointer ">Projects</li>
-                    <li className="hover:underline cursor-pointer">Skills</li>
+                    <li className="hover:underline cursor-pointer">Blog</li>
                     <li className="hover:underline cursor-pointer">Contact</li>
                 </ul>
             </nav>
