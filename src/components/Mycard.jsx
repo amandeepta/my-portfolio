@@ -37,9 +37,9 @@ function Mycard() {
         setOpen(!isOpen);
     }
     return (
-        <aside className="sticky top-0 p-10 bg-[#EEEBDD]
+        <aside className="lg:sticky lg:top-0 p-10 bg-[#EEEBDD]
 
-        rounded-2xl w-[350px] h-max shadow-md max-md:w-full">
+        rounded-2xl w-[350px] h-max shadow-md max-md:w-full max-md:relative">
             <div className="flex flex-col w-full">
                 <img src = {image} alt = "my image" className="rounded-3xl w-auto shadow-2xl object-cover border
                  border-black hover:shadow-3xl transition-shadow duration-200 hover:scale-105"></img>
