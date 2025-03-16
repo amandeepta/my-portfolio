@@ -9,7 +9,7 @@ function App() {
     return (
         <Router>
                 <div className='flex max-md:flex-col lg:flex-row max-md:space-y-10 
-                lg:space-x-9 md:space-x-6 w-full h-full lg:py-10 lg:px-20 max-md:py-4 max-md:px-4'>
+                lg:space-x-9 md:space-x-6 w-full h-full lg:py-10 lg:px-20 max-md:py-4 max-md:px-4 bg-[#030712]'>
                     <Mycard />
                     <div className='relative w-full'>
                         <Routes>

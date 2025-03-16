@@ -4,19 +4,18 @@ import Projects from './Projects';
 
 function Hero() {
     return (
-        <div className="w-auto h-max relative bg-[#EEEBDD]
-        p-6 rounded-2xl shadow-md">
-            <h2 className="text-2xl font-bold mb-2 font-serif">About Me</h2>
-            <div className="bg-yellow-600 w-[40px] h-[5px] my-3"></div>
-            <p className="mb-3 text-lg font-mono">
-            Passionate second-year Computer Science student with a keen interest in technology and innovation.
-            Proficient in Java, Python, and C++, with a strong grasp of data structures, algorithms, and software development. 
-            Eager to leverage skills and drive growth in collaborative environments. Seeking opportunities to contribute to 
-            impactful projects and further expand expertise. Let's connect and explore possibilities in tech and innovation together.
-            </p>
+        <div className="w-auto h-max relative bg-[#060f21]
+        p-6 rounded-2xl shadow-md text-white border border-gray-700"> 
+          <p className="mb-6 text-lg font-mono text-gray-300 leading-relaxed">
+    <span className="text-yellow-500 font-semibold">Greetings!</span><br />
+    <span className="block mt-4">You've arrived at my corner of the web. Take a moment to explore, wander, and dive into my latest projects and ideas.</span><br />
+    
+    I hope you enjoy exploring my work as much as I enjoyed creating it.
+</p>
 
-            <h2 className="text-2xl font-bold mb-4 font-serif">Projects</h2>
 
+            <h2 className="text-2xl font-bold mb-2Az font-serif text-[#cfbcc6]">Projects</h2>
+            <div className="bg-[#e72a30] w-[40px] h-[5px] my-3"></div>
             <Projects/>
 
         </div>

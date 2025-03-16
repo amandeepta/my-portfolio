@@ -10,11 +10,6 @@ function Blog() {
             Sorry for the inconvinence.
             For the time being you can go through the projects and suggest me some changes or contact me to work collaboratively.
             </p>
-
-            <h2 className="text-2xl font-bold mb-4 font-serif">Projects</h2>
-
-            <Projects/>
-
         </div>
     )
 }

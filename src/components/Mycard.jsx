@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { TfiAngleUp, TfiAngleDown,} from "react-icons/tfi";
-import { FaInstagram, FaLinkedin, FaTelegramPlane, FaTwitter, FaDiscord } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTelegramPlane, FaGithub, FaDiscord } from "react-icons/fa";
 import { AiTwotoneMail } from "react-icons/ai";
-import image from '../assets/1.jpg';
+import image from '../assets/IMG_6822.JPG';
 
 function Mycard() {
     const contactInfo = [
@@ -24,7 +24,7 @@ function Mycard() {
             type: 'Instagram',
             icon: <FaInstagram className="w-9 h-7 text-pink-400" />,
             text: 'Instagram',
-            href: 'https://wa.me/yourphonenumber',
+            href: 'https://www.instagram.com/amandipta/',
             name : 'amandipta',
         },
         
@@ -41,9 +41,9 @@ function Mycard() {
 
         rounded-2xl w-[350px] h-max shadow-md max-md:w-full max-md:relative">
             <div className="flex flex-col w-full">
-                <img src = {image} alt = "my image" className="rounded-3xl w-auto shadow-2xl object-cover border
-                 border-black hover:shadow-3xl transition-shadow duration-200 hover:scale-105"></img>
-                <h1 className="w-full font-bold text-center mt-4 text-3xl mb-4 font-serif">Aman Deepta</h1>
+                <img src = {image} alt = "my image" className="rounded-3xl w-auto shadow-2xl object-cover border-4
+                 border-[#020103] shadow-3xl"></img>
+                <h1 className="w-full font-bold text-center mt-4 text-3xl mb-2 font-serif text-[#080f24]">Aman Deepta</h1>
 
                 <button className="lg:hidden max-md:block absolute right-0 top-0 border h-[2.5rem]
                  border-black shadow-md p-2 rounded-lg rounded-tr-2xl  bg-gradient-to-br from-[#04052e] to-[#bfbdc1] text-white" onClick={toggleMenu}>
@@ -54,7 +54,7 @@ function Mycard() {
 
                 <div className={`${isOpen ? 'block ' : 'hidden' } lg:flex flex-col space-y-6 `}>
                     
-                    <div className="w-full h-0.5 bg-black shadow-md opacity-50 mt-2"></div>
+                    <div className="w-full h-1 bg-yellow-600 shadow-md mt-1"></div>
 
                     <div className="flex flex-col space-y-6">
                         {
@@ -73,12 +73,12 @@ function Mycard() {
                                 );
                             })
                         }
-                        <div className="w-full h-0.5 bg-black shadow-md opacity-50 mt-2"></div>
+                        <div className="w-full h-1 bg-yellow-600 shadow-md mt-1"></div>
 
                         <div className="flex flex-row justify-evenly">
-                            <a href = ""  aria-label="Discord link" target="_blank" className=" "> <FaDiscord className="w-7 h-5"/></a>
-                            <a href = " " aria-label="Telegram link" target="_blank" className=""><FaTelegramPlane className="w-7 h-5 "/></a>
-                            <a href = "" aria-label="Twitter link" target="_blank" className=""><FaTwitter className="w-7 h-5"/></a>
+                            <a href = "https://discordapp.com/users/storm_16406"  aria-label="Discord link" target="" className=" "> <FaDiscord className="w-9 h-5"/></a>
+                            <a href = "https://t.me/amandipta" aria-label="Telegram link" target="_blank" className=""><FaTelegramPlane className="w-9 h-5 "/></a>
+                            <a href = "https://github.com/amandeepta" aria-label="Github Link" target="_blank" className=""><FaGithub className="w-9 h-5"/></a>
                         </div>
                     </div>
 
