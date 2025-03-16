@@ -1,29 +1,30 @@
+import { Link } from 'react-router-dom';
 import Data from './ProjectData';
 
 function Projects() {
     return (
-        <div className='m-4 p-4 bg-[#080d28] relative'>
+        <div className='m-4 p-6 bg-[#080d28] w-full max-w-screen-lg mx-auto rounded-lg shadow-xl'>
             {Data.map((item, index) => (
-                <div 
+                <Link 
+                    to={item.gitLink} 
                     key={index} 
-                    className="mb-9 cursor-pointer group relative"
+                    className="mb-8 cursor-pointer group relative flex flex-col md:flex-row items-center gap-8"
                 >
-                    <h1 className='text-lg font-bold'>{item.name}</h1>
-                    <p className='text-gray-300'>{item.discription}</p>
-                    <img src={item.image} alt={item.title} className='rounded-md' />
-
-                    {/* Hover effect to show project details */}
-                    <div className="absolute inset-0 bg-black bg-opacity-70 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-4">
-                        <h2 className='text-2xl font-bold text-white'>{item.name}</h2>
-                        <p className='text-gray-300 mb-4'>{item.discription}</p>
-                        <button 
-                            className='mt-2 px-4 py-2 bg-yellow-500 text-black rounded hover:bg-yellow-600'
-                            onClick={() => window.open(item.link)}
-                        >
-                            View Project
-                        </button>
+                    {/* Project Details */}
+                    <div className="flex-1 text-center md:text-left">
+                        <h1 className='text-xl md:text-2xl font-bold text-white'>{item.name}</h1>
+                        <p className='text-gray-400 text-md md:text-md mt-2'>{item.discription}</p>
                     </div>
-                </div>
+
+                    {/* Project Image */}
+                    <div className="rounded-xl shadow-lg w-full h-full sm:w-80 md:w-96">
+                        <img 
+                            src={item.image} 
+                            alt={item.name} 
+                            className='rounded-xl w-full h-full sm:h-60 md:h-64 object-contain transition-transform duration-300'
+                        />
+                    </div>
+                </Link>
             ))}
         </div>
     );
